@@ -7,25 +7,27 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class ChatSystemClient {
-    public static void main(String[] args) throws IOException {
+    public void start() throws IOException {
         String hostName = "localhost";
         int portNumber = 4200;
 
         try (
-                Socket kkSocket = new Socket(hostName, portNumber);
-                PrintWriter out = new PrintWriter(kkSocket.getOutputStream(), true);
+                Socket socket = new Socket(hostName, portNumber);
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(
-                        new InputStreamReader(kkSocket.getInputStream()));
+                        new InputStreamReader(socket.getInputStream()));
         ) {
             BufferedReader stdIn =
                     new BufferedReader(new InputStreamReader(System.in));
             String fromServer;
             String fromUser;
 
+            ClientWriteThread writeThread = new ClientWriteThread(socket, this);
+            ClientReadThread readThread = new ClientReadThread(socket, this);
+
             while ((fromServer = in.readLine()) != null) {
                 System.out.println("Server: " + fromServer);
-                if (fromServer.equals("Bye."))
-                    break;
+
 
                 fromUser = stdIn.readLine();
                 if (fromUser != null) {
