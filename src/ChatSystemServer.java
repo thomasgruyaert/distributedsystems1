@@ -18,7 +18,6 @@ public class ChatSystemServer {
                 Socket socket = serverSocket.accept();
                 System.out.println("Client connected");
 
-
                 ChatSystemServerThread serverThread = new ChatSystemServerThread(socket, this);
                 userThreads.add(serverThread);
                 serverThread.start();

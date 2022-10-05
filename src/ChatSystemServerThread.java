@@ -9,6 +9,7 @@ public class ChatSystemServerThread extends Thread {
     private Socket socket = null;
     private PrintWriter writer;
     private ChatSystemServer server;
+    private String username;
 
     public ChatSystemServerThread(Socket socket, ChatSystemServer server) {
         super("ChatSystemServerThread");
@@ -27,6 +28,9 @@ public class ChatSystemServerThread extends Thread {
             String inputLine, outputLine;
             writer = out;
             out.println("Welcome to the chat group");
+            out.println("Enter username: ");
+            username = in.readLine();
+
             while ((inputLine = in.readLine()) != null) {
                 server.BroadCast(inputLine, this);
             }
