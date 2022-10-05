@@ -31,6 +31,7 @@ public class ChatSystemServer {
     }
 
     public void BroadCast(String message, ChatSystemServerThread sender){
+        System.out.println("client sent message: "+message);
         for (var userThread: userThreads) {
             if(!userThread.equals(sender))
                 userThread.send(message);

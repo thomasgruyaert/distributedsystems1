@@ -26,6 +26,7 @@ public class ChatSystemServerThread extends Thread {
         ) {
             String inputLine, outputLine;
             writer = out;
+            out.println("Welcome to the chat group");
             while ((inputLine = in.readLine()) != null) {
                 server.BroadCast(inputLine, this);
             }
