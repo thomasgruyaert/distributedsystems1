@@ -7,10 +7,13 @@ import java.net.Socket;
 public class ChatSystemServerThread extends Thread {
 
     private Socket socket = null;
+    private PrintWriter writer;
+    private ChatSystemServer server;
 
-    public ChatSystemServerThread(Socket socket) {
+    public ChatSystemServerThread(Socket socket, ChatSystemServer server) {
         super("ChatSystemServerThread");
         this.socket = socket;
+        this.server = server;
     }
 
     public void run() {
@@ -22,13 +25,17 @@ public class ChatSystemServerThread extends Thread {
                                 socket.getInputStream()));
         ) {
             String inputLine, outputLine;
-
+            writer = out;
             while ((inputLine = in.readLine()) != null) {
-
+                server.BroadCast(inputLine, this);
             }
             socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void send(String message){
+        writer.println(message);
     }
 }
