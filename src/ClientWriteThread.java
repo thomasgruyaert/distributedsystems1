@@ -6,9 +6,13 @@ public class ClientWriteThread extends Thread{
     private ChatSystemClient client;
     private Socket socket;
 
-
+    public ClientWriteThread(Socket socket, ChatSystemClient client) {
+        super("ChatSystemServerThread");
+        this.socket = socket;
+        this.client = client;
+    }
     @Override
     public void run() {
-        super.run();
+
     }
 }
