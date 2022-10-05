@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ChatSystemServerThread {
+public class ChatSystemServerThread extends Thread {
 
     private Socket socket = null;
 
@@ -22,15 +22,9 @@ public class ChatSystemServerThread {
                                 socket.getInputStream()));
         ) {
             String inputLine, outputLine;
-            ChatSystemProtocol ccp = new ChatSystemProtocol();
-            outputLine = ccp.processInput(null);
-            out.println(outputLine);
 
             while ((inputLine = in.readLine()) != null) {
-                outputLine = ccp.processInput(inputLine);
-                out.println(outputLine);
-                if (outputLine.equals("Bye"))
-                    break;
+
             }
             socket.close();
         } catch (IOException e) {
