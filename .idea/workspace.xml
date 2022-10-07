@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="Files added">
-      <change afterPath="$PROJECT_DIR$/src/ChatSystemServerThread.java" afterDir="false" />
+    <list default="true" id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="Working version of chat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatSystemClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatSystemServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatSystemServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatSystemServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatSystemServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +37,44 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/jef/IdeaProjects/SocketTutorial"
+    "last_opened_file_path": "/home/jef/IdeaProjects/2223Algo/Grafen"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="ChatSystemClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatSystemClient" />
+      <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ChatSystemClient" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.ChatSystemClient" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +98,56 @@
       <option name="project" value="LOCAL" />
       <updated>1664973152885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chat client,server, thread created">
+      <created>1664973483334</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664973483334</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chat client,server, thread created">
+      <created>1664974864234</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664974864234</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementation broadcast">
+      <created>1664976360680</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664976360680</updated>
+    </task>
+    <task id="LOCAL-00006" summary="server implementation">
+      <created>1664976879387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664976879387</updated>
+    </task>
+    <task id="LOCAL-00007" summary="read and write threads">
+      <created>1664977070798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664977070798</updated>
+    </task>
+    <task id="LOCAL-00008" summary="read and write threads">
+      <created>1664977639282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664977639282</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Working version of chat">
+      <created>1664979481616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664979481616</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +163,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Files added" />
+    <MESSAGE value="chat client,server, thread created" />
+    <MESSAGE value="Implementation broadcast" />
+    <MESSAGE value="server implementation" />
+    <MESSAGE value="read and write threads" />
+    <MESSAGE value="Working version of chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working version of chat" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ChatSystemServer.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ChatSystemServerThread.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ClientWriteThread.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

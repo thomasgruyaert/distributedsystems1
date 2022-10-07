@@ -27,12 +27,16 @@ public class ChatSystemServerThread extends Thread {
         ) {
             String inputLine, outputLine;
             writer = out;
-            out.println("Welcome to the chat group");
+
             out.println("Enter username: ");
             username = in.readLine();
+            server.addUsername(username);
+            out.println("Welcome to the chat group "+username);
+            if (server.usernames.size() > 0)
+                out.println("The current online users are "+server.usernames.toString());
 
             while ((inputLine = in.readLine()) != null) {
-                server.BroadCast(inputLine, this);
+                server.BroadCast("["+username+"]: "+inputLine, this);
             }
             socket.close();
         } catch (IOException e) {

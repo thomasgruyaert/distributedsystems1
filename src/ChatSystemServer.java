@@ -9,6 +9,7 @@ import java.util.*;
 
 public class ChatSystemServer {
     private Set<ChatSystemServerThread> userThreads = new HashSet<>();
+    public Set<String> usernames = new HashSet<>();
     private int portNumber = 4200;
 
     public void Execute(){
@@ -35,5 +36,9 @@ public class ChatSystemServer {
             if(!userThread.equals(sender))
                 userThread.send(message);
         }
+    }
+
+    public void addUsername(String username){
+        usernames.add(username);
     }
 }
