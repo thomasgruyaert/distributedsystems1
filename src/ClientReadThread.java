@@ -6,9 +6,24 @@ public class ClientReadThread  extends Thread{
     private Socket socket;
     private ChatSystemClient client;
 
+    private ClientChatGui clientGui;
+
     public ClientReadThread(Socket socket, ChatSystemClient client) {
         this.socket = socket;
         this.client = client;
+
+        try {
+            InputStream input = socket.getInputStream();
+            in = new BufferedReader(new InputStreamReader(input));
+        } catch (IOException ex) {
+            System.out.println("Error getting input stream: " + ex.getMessage());
+            ex.printStackTrace();
+        }
+    }
+
+    public ClientReadThread(Socket socket, ClientChatGui clientGui) {
+        this.socket = socket;
+        this.clientGui = clientGui;
 
         try {
             InputStream input = socket.getInputStream();

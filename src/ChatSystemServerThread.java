@@ -9,12 +9,14 @@ public class ChatSystemServerThread extends Thread {
     private Socket socket = null;
     private PrintWriter writer;
     private ChatSystemServer server;
-    private String username;
+
+    private ClientChatGui clientGui;
 
     public ChatSystemServerThread(Socket socket, ChatSystemServer server) {
         super("ChatSystemServerThread");
         this.socket = socket;
         this.server = server;
+        this.clientGui = new ClientChatGui("Chat");
     }
 
     public void run() {
@@ -27,16 +29,17 @@ public class ChatSystemServerThread extends Thread {
         ) {
             String inputLine, outputLine;
             writer = out;
-
+            out.println("Welcome to the chat group");
             out.println("Enter username: ");
-            username = in.readLine();
-            server.addUsername(username);
-            out.println("Welcome to the chat group "+username);
-            if (server.usernames.size() > 0)
-                out.println("The current online users are "+server.usernames.toString());
+            clientGui.display("Welcome to the chat group");
+            clientGui.display("Please enter your username above");
+            String userName = in.readLine();
+            server.addUserName(userName);
+            String serverMessage = "New user connected: " + userName;
+            server.broadCast(serverMessage, this);
 
             while ((inputLine = in.readLine()) != null) {
-                server.BroadCast("["+username+"]: "+inputLine, this);
+                server.broadCast(inputLine, this);
             }
             socket.close();
         } catch (IOException e) {
@@ -44,7 +47,18 @@ public class ChatSystemServerThread extends Thread {
         }
     }
 
+    void updateUsers() {
+        if (server.hasUsers()) {
+            clientGui.setOnlineUsers(server.getUserNames());
+            writer.println("Connected users: " + server.getUserNames());
+        } else {
+            clientGui.display("No other users connected");
+            writer.println("No other users connected");
+        }
+    }
+
     public void send(String message){
         writer.println(message);
+        clientGui.display(message);
     }
 }

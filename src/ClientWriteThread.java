@@ -9,14 +9,26 @@ public class ClientWriteThread extends Thread{
     private Socket socket;
     private ChatSystemClient client;
 
+    private ClientChatGui clientGui;
+
+    private Boolean isConnected = true;
+
+    public void disconnect(){
+        this.isConnected = false;
+    }
+
     public ClientWriteThread(ChatSystemClient client) {
         this.client = client;
+    }
+
+    public ClientWriteThread(ClientChatGui clientGui) {
+        this.clientGui = clientGui;
     }
 
     public void run() {
         do {
             Scanner scanner = new Scanner(System.in);
             client.send(scanner.nextLine());
-        } while (true);
+        } while (isConnected);
     }
 }

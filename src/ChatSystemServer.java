@@ -9,7 +9,7 @@ import java.util.*;
 
 public class ChatSystemServer {
     private Set<ChatSystemServerThread> userThreads = new HashSet<>();
-    public Set<String> usernames = new HashSet<>();
+    private Set<String> userNames = new HashSet<>();
     private int portNumber = 4200;
 
     public void Execute(){
@@ -30,7 +30,15 @@ public class ChatSystemServer {
         }
     }
 
-    public void BroadCast(String message, ChatSystemServerThread sender){
+    void addUserName(String userName) {
+        userNames.add(userName);
+    }
+
+    Set<String> getUserNames() {
+        return this.userNames;
+    }
+
+    public void broadCast(String message, ChatSystemServerThread sender){
         System.out.println("client sent message: "+message);
         for (var userThread: userThreads) {
             if(!userThread.equals(sender))
@@ -38,7 +46,7 @@ public class ChatSystemServer {
         }
     }
 
-    public void addUsername(String username){
-        usernames.add(username);
+    boolean hasUsers() {
+        return !this.userNames.isEmpty();
     }
 }
