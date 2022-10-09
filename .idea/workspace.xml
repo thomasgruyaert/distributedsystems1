@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dca1db09-b804-4588-9004-8ff24576368c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DistributedSystems1Labo2/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="Gui werkende">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemServerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientChatGui.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientChatGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientReadThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientWriteThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,52 +23,153 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2FucCbIgUqRAlssTDXwmktYEW7p" />
+  <component name="ProjectId" id="2FiQyTDGXqHTWwNeTv1NrT6i9wU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/thoma/IdeaProjects/distributedsystems1",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jef/IdeaProjects/distributedsystems1&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.ClientChatGui">
-    <configuration name="ClientChatGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ChatSystemClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatSystemClient" />
+      <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientChatGui" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClientChatGui" />
-      <module name="distributedsystems1" />
+      <module name="DistributedSystemsLabo1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Server" />
-      <module name="distributedsystems1" />
+      <module name="DistributedSystemsLabo1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ClientChatGui" />
+      <item itemvalue="Application.ChatSystemClient" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientChatGui" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.ChatSystemClient" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dca1db09-b804-4588-9004-8ff24576368c" name="Changes" comment="" />
-      <created>1665345285756</created>
+      <changelist id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="" />
+      <created>1664972681223</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665345285756</updated>
+      <updated>1664972681223</updated>
     </task>
+    <task id="LOCAL-00001" summary="Files added">
+      <created>1664973101149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664973101149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Files added">
+      <created>1664973152885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664973152885</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chat client,server, thread created">
+      <created>1664973483334</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664973483334</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chat client,server, thread created">
+      <created>1664974864234</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664974864234</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementation broadcast">
+      <created>1664976360680</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664976360680</updated>
+    </task>
+    <task id="LOCAL-00006" summary="server implementation">
+      <created>1664976879387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664976879387</updated>
+    </task>
+    <task id="LOCAL-00007" summary="read and write threads">
+      <created>1664977070798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664977070798</updated>
+    </task>
+    <task id="LOCAL-00008" summary="read and write threads">
+      <created>1664977639282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664977639282</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Working version of chat">
+      <created>1664979481616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664979481616</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Working version of chat">
+      <created>1665136886028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665136886029</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Gui werkende">
+      <created>1665316199600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665316199600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +182,36 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Files added" />
+    <MESSAGE value="chat client,server, thread created" />
+    <MESSAGE value="Implementation broadcast" />
+    <MESSAGE value="server implementation" />
+    <MESSAGE value="read and write threads" />
+    <MESSAGE value="Working version of chat" />
+    <MESSAGE value="Gui werkende" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui werkende" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ChatSystemServer.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ChatSystemClient.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ChatSystemClient.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
