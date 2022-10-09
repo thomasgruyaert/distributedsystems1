@@ -6,8 +6,6 @@ public class ClientReadThread  extends Thread{
     private Socket socket;
     private ChatSystemClient client;
 
-    private ClientChatGui clientGui;
-
     public ClientReadThread(Socket socket, ChatSystemClient client) {
         this.socket = socket;
         this.client = client;
@@ -23,8 +21,6 @@ public class ClientReadThread  extends Thread{
 
     public ClientReadThread(Socket socket, ClientChatGui clientGui) {
         this.socket = socket;
-        this.clientGui = clientGui;
-
         try {
             InputStream input = socket.getInputStream();
             in = new BufferedReader(new InputStreamReader(input));
@@ -38,7 +34,7 @@ public class ClientReadThread  extends Thread{
         while (true) {
             try {
                 String response = in.readLine();
-                System.out.println("\n" + response);
+                client.messageReceived(response);
 
             } catch (IOException ex) {
                 System.out.println("Error reading from server: " + ex.getMessage());

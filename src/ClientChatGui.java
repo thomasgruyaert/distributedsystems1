@@ -18,30 +18,12 @@ public class ClientChatGui extends JFrame {
     private JButton connectButton;
     private JButton disconnectButton;
     private JTextArea onlineUsersArea;
+    private ChatSystemClient client;
+    private String userName = "";
 
     void start() throws IOException {
-        String hostName = "localhost";
-        int portNumber = 4200;
-
-        try{
-            Socket socket = new Socket(hostName, portNumber);
-            OutputStream output = socket.getOutputStream();
-
-            ClientWriteThread writeThread = new ClientWriteThread(this);
-            ClientReadThread readThread = new ClientReadThread(socket, this);
-
-            writeThread.start();
-            readThread.start();
-
-
-        } catch (UnknownHostException e) {
-            display("Don't know about host " + hostName);
-            System.exit(1);
-        } catch (IOException e) {
-            display("Couldn't get I/O for the connection to " +
-                    hostName);
-            System.exit(1);
-        }
+        client = new ChatSystemClient("localhost",4200,this);
+        client.start();
     }
 
     public ClientChatGui(String title) {
@@ -70,6 +52,8 @@ public class ClientChatGui extends JFrame {
                     messageField.setEnabled(true);
                     usernameField.setEnabled(false);
                     connectButton.setEnabled(false);
+                    userName = usernameField.getText();
+                    connectUser(usernameField.getText());
                 } else {
 
                 }
@@ -90,12 +74,13 @@ public class ClientChatGui extends JFrame {
     }
 
     private void connectUser(String username){
-
+        client.send(username);
     }
 
     private void sendMessage(String text){
-        display(text);
+        display("["+userName+"]: "+text);
         messageField.setText("");
+        client.send(text);
     }
 
     public void setOnlineUsers(Set<String> onlineUsers){
@@ -108,6 +93,7 @@ public class ClientChatGui extends JFrame {
     public void display(String message){
         chatArea.append(message + "\n");
     }
+
 
     public static void main(String[] args){
         JFrame frame = new ClientChatGui("Chat GUI");

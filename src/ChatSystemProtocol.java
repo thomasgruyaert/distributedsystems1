@@ -19,6 +19,7 @@ public class ChatSystemProtocol {
             }
             state = WAITING;
         }
+
         return theOutput;
     }
 }
