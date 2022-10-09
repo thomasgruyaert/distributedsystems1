@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f9b2e66-bca3-4701-9790-d680f305568f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5f9b2e66-bca3-4701-9790-d680f305568f" name="Changes" comment="Added gitignore files">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaRMITest/RMITestClient/src/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaRMITest/RMITestClient/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaRMITest/RMITestServer/src/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaRMITest/RMITestServer/src/CounterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaRMITest/RMITestServer/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/distributedsystems1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/distributedsystems1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatSystemServerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientChatGui.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientChatGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientReadThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientWriteThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/DistributedSystemsLabo2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestClient/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestClient/RMITestClient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestClient/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/RMITestServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedSystemsLabo2/RMITestServer/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,16 +53,46 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/thoma/Documents/GitHub/distributedsystems1",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClientChatGui">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMI\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1" />
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMI\RMITestServer\src" />
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMI\RMITestServer" />
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMIExample\RMITestClient\src" />
+      <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMI" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RMITestClient_Main">
     <configuration name="ClientChatGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClientChatGui" />
       <module name="DistributedSystemsLabo1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RMITestClient_Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="RMITestClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RMITestServer_Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="RMITestServer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,6 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RMITestServer_Main" />
+        <item itemvalue="Application.RMITestClient_Main" />
         <item itemvalue="Application.ClientChatGui" />
         <item itemvalue="Application.Server" />
       </list>
@@ -77,6 +122,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665346292130</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed Repo Structure">
+      <created>1665346508436</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665346508437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +142,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed Repo Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Repo Structure" />
   </component>
 </project>

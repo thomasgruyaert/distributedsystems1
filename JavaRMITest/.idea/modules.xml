@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaRMITest.iml" filepath="$PROJECT_DIR$/JavaRMITest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RMITestClient/RMITestClient.iml" filepath="$PROJECT_DIR$/RMITestClient/RMITestClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RMITestServer/RMITestServer.iml" filepath="$PROJECT_DIR$/RMITestServer/RMITestServer.iml" />
+    </modules>
+  </component>
+</project>
