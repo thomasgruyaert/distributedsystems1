@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="Working version of chat">
+    <list default="true" id="6063a46c-9218-4079-9294-2c2e2e2cee55" name="Changes" comment="Gui werkende">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665136886029</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Gui werkende">
+      <created>1665316199600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665316199600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +190,8 @@
     <MESSAGE value="server implementation" />
     <MESSAGE value="read and write threads" />
     <MESSAGE value="Working version of chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working version of chat" />
+    <MESSAGE value="Gui werkende" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui werkende" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -192,11 +200,6 @@
           <url>file://$PROJECT_DIR$/src/ChatSystemServer.java</url>
           <line>42</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ClientReadThread.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ChatSystemClient.java</url>
