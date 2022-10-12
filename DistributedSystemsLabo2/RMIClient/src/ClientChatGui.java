@@ -30,6 +30,7 @@ public class ClientChatGui extends JFrame {
         this.setSize(640, 480);
         this.sendButton.setEnabled(false);
         this.messageField.setEnabled(false);
+        disconnectButton.setEnabled(true);
         try {
             start();
         } catch (IOException e) {
@@ -49,17 +50,23 @@ public class ClientChatGui extends JFrame {
                     messageField.setEnabled(true);
                     usernameField.setEnabled(false);
                     connectButton.setEnabled(false);
+                    disconnectButton.setEnabled(true);
                     userName = usernameField.getText();
                     connectUser(usernameField.getText());
-                } else {
-
                 }
             }
         });
         disconnectButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                disconnectUser();
+                sendButton.setEnabled(false);
+                messageField.setEnabled(false);
+                usernameField.setEnabled(true);
+                connectButton.setEnabled(true);
+                disconnectButton.setEnabled(false);
+                userName = "";
+                usernameField.setText("");
             }
         });
         messageField.addActionListener(new ActionListener() {
@@ -74,7 +81,11 @@ public class ClientChatGui extends JFrame {
         client.registerUser(userName);
         updateOnlineUsers();
         getMessages();
+    }
 
+    private void disconnectUser(){
+        client.logoutUser();
+        onlineUsersArea.setText("");
     }
 
     private void getMessages(){
