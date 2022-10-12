@@ -2,10 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.net.UnknownHostException;
+import java.rmi.RemoteException;
 import java.util.Set;
 
 public class ClientChatGui extends JFrame {
@@ -18,11 +15,11 @@ public class ClientChatGui extends JFrame {
     private JButton connectButton;
     private JButton disconnectButton;
     private JTextArea onlineUsersArea;
-    private ChatSystemClient client;
+    private Client client;
     private String userName = "";
 
     void start() throws IOException {
-        client = new ChatSystemClient("localhost",4200,this);
+        client = new Client("localhost",4200,this);
         client.start();
     }
 
@@ -74,13 +71,18 @@ public class ClientChatGui extends JFrame {
     }
 
     private void connectUser(String username){
-        client.send(username);
+        client.registerUser(userName);
     }
 
     private void sendMessage(String text){
         display("["+userName+"]: "+text);
         messageField.setText("");
-        client.send(text);
+
+        try {
+            client.sendMessage(text);
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void setOnlineUsers(Set<String> onlineUsers){
