@@ -19,8 +19,8 @@ public class Client {
 
     public void start(){
         try {
-            Registry myRegistry = LocateRegistry.getRegistry(hostName, port);
-            serverClient = (IChatClient) myRegistry.lookup(hostName);
+            Registry myRegistry = LocateRegistry.getRegistry("localhost", 1099);
+            serverClient = (IChatClient) myRegistry.lookup("ChatService");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -35,6 +35,14 @@ public class Client {
         try {
             serverClient.connectUser(this.userName);
         } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public synchronized String getMessages(){
+        try {
+            return serverClient.receiveMessage();
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
