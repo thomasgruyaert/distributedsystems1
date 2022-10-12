@@ -1,35 +1,39 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class ChatServer extends UnicastRemoteObject implements IChatClient{
 
     private Set<String> connectedUsers;
+    private List<String> messages;
     public ChatServer() throws RemoteException {
-        connectedUsers = new HashSet<String>();
     }
 
     @Override
-    public String receiveMessage() throws RemoteException {
-        return null;
+    public String receiveMessage(int index) throws RemoteException {
+        while(index > messages.size() -1){
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return messages.get(index);
     }
 
     @Override
     public void sendMessage(String sender, String message) throws RemoteException {
-        System.out.println("Message received: "+message);
         for (var user: connectedUsers) {
-            if(!user.equals(sender))
-                broadcastMessage(sender, message);
+            if(!user.equals(sender)) {
+                messages.add(message);
+                notifyAll();
+            }
         }
     }
 
     @Override
-    public void connectUser(String username) throws RemoteException {
-
-    }
-
-    private void broadcastMessage(String sender, String message){
-
+    public void connectUser(String userName) throws RemoteException {
+        connectedUsers.add(userName);
     }
 }
