@@ -3,7 +3,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
 public class Client {
-    private IChatServer server;
+    private IChatClient serverClient;
     private String hostName = "";
     private int port = 0;
 
@@ -20,19 +20,22 @@ public class Client {
     public void start(){
         try {
             Registry myRegistry = LocateRegistry.getRegistry(hostName, port);
-            server = (IChatServer) myRegistry.lookup(hostName);
-
-            server.registerListener("Gebruiker","localhost","ChatService");
+            serverClient = (IChatClient) myRegistry.lookup(hostName);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
     public void sendMessage(String message) throws RemoteException {
-        server.broadcastMessage(userName,message);
+        serverClient.sendMessage(userName,message);
     }
 
     public void registerUser(String userName){
         this.userName = userName;
+        try {
+            serverClient.connectUser(this.userName);
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
