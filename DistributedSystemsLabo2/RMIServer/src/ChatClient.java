@@ -1,8 +1,8 @@
 public class ChatClient {
     private String userName;
-    private ChatClientIF chatClient;
+    private IChatClient chatClient;
 
-    public ChatClient(String name, ChatClientIF chatClient){
+    public ChatClient(String name, IChatClient chatClient){
         this.userName = userName;
         this.chatClient = chatClient;
     }
@@ -11,7 +11,7 @@ public class ChatClient {
         return userName;
     }
 
-    public ChatClientIF getChatClient(){
+    public IChatClient getChatClient(){
         return chatClient;
     }
 }
