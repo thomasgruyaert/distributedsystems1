@@ -4,7 +4,7 @@ import java.rmi.RemoteException;
 public interface IChatClient extends Remote {
     public String receiveMessage() throws RemoteException;
 
-    public void sendMessage(String userName, String message) throws RemoteException;
+    public void sendMessage(String sender, String message) throws RemoteException;
 
     //public void getUserList() throws RemoteException;
 
