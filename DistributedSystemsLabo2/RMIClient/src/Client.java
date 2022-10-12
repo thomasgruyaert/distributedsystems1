@@ -8,10 +8,9 @@ public class Client {
     private IChatClient serverClient;
     private String hostName = "";
     private int port = 0;
-
     private String userName = "";
     private ClientChatGui gui;
-
+    private boolean connected = false;
     private Set<String> currentUserList;
     private int index = 0;
     public Client(String hostName, int port, ClientChatGui gui){
@@ -45,7 +44,7 @@ public class Client {
             } catch (RemoteException e) {
                 throw new RuntimeException(e);
             }
-        }while(true);
+        }while(connected);
     }
 
     public Set<String> getUserList(){
@@ -60,10 +59,21 @@ public class Client {
 
     }
 
+    public void logoutUser(){
+        try{
+            serverClient.disconnectUser(this.userName);
+            this.userName= "";
+            connected = false;
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public void registerUser(String userName){
         this.userName = userName;
         try {
             serverClient.connectUser(this.userName);
+            connected = true;
         } catch (RemoteException e) {
             throw new RuntimeException(e);
         }

@@ -11,5 +11,7 @@ public interface IChatClient extends Remote {
 
     public void connectUser(String username) throws RemoteException;
 
+    public void disconnectUser(String username) throws RemoteException;
+
     public Set<String> updateUserList(Set<String> currentUserList) throws RemoteException;
 }

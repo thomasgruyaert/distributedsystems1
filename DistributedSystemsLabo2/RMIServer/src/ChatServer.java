@@ -41,6 +41,13 @@ public class ChatServer extends UnicastRemoteObject implements IChatClient{
     }
 
     @Override
+    public synchronized void disconnectUser(String userName) throws RemoteException {
+        connectedUsers.remove(userName);
+        System.out.println("User disconnected: "+ userName);
+        notifyAll();
+    }
+
+    @Override
     public synchronized Set<String> updateUserList(Set<String> currentUserList) throws RemoteException{
         while (currentUserList.equals(connectedUsers)){
             try {
