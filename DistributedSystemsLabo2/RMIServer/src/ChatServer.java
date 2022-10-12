@@ -28,18 +28,28 @@ public class ChatServer extends UnicastRemoteObject implements IChatClient{
 
     @Override
     public synchronized void sendMessage(String sender, String message) throws RemoteException {
-        for (var user: connectedUsers) {
-            if(!user.equals(sender)) {
-                messages.add(message);
-                System.out.println("Received message: "+message);
-                notifyAll();
-            }
-        }
+        messages.add("["+sender+"]: "+message);
+        System.out.println("Received message: "+message);
+        notifyAll();
     }
 
     @Override
-    public void connectUser(String userName) throws RemoteException {
+    public synchronized void connectUser(String userName) throws RemoteException {
         connectedUsers.add(userName);
         System.out.println("User connected: "+ userName);
+        notifyAll();
+    }
+
+    @Override
+    public synchronized Set<String> updateUserList(Set<String> currentUserList) throws RemoteException{
+        while (currentUserList.equals(connectedUsers)){
+            try {
+                wait();
+            }catch (InterruptedException e){
+                throw new RuntimeException(e);
+            }
+        }
+
+        return connectedUsers;
     }
 }

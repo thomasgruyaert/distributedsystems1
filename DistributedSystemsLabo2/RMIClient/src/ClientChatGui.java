@@ -72,15 +72,25 @@ public class ClientChatGui extends JFrame {
 
     private void connectUser(String username){
         client.registerUser(userName);
+        updateOnlineUsers();
         getMessages();
+
     }
 
     private void getMessages(){
-        client.receive();
+        new Thread(() -> {
+            client.receive();
+        }).start();
+    }
+
+    private void updateOnlineUsers(){
+        new Thread(() -> {
+           setOnlineUsers(client.getUserList());
+        }).start();
     }
 
     private void sendMessage(String text){
-        display("["+userName+"]: "+text);
+        //display("["+userName+"]: "+text);
         messageField.setText("");
 
         try {

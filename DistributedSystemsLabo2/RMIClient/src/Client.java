@@ -1,6 +1,8 @@
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Client {
     private IChatClient serverClient;
@@ -9,11 +11,14 @@ public class Client {
 
     private String userName = "";
     private ClientChatGui gui;
+
+    private Set<String> currentUserList;
     private int index = 0;
     public Client(String hostName, int port, ClientChatGui gui){
         this.gui = gui;
         this.hostName = hostName;
         this.port = port;
+        currentUserList = new HashSet<>();
 
         start();
     }
@@ -32,13 +37,27 @@ public class Client {
     }
 
     public void receive() {
-        try {
-            String message = serverClient.receiveMessage(index);
-            index++;
-            gui.display(message);
-        } catch (RemoteException e) {
-            throw new RuntimeException(e);
-        }
+        do{
+            try {
+                String message = serverClient.receiveMessage(index);
+                index++;
+                gui.display(message);
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }
+        }while(true);
+    }
+
+    public Set<String> getUserList(){
+        do{
+            try {
+                currentUserList = serverClient.updateUserList(currentUserList);
+                gui.setOnlineUsers(currentUserList);
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }
+        }while (true);
+
     }
 
     public void registerUser(String userName){
