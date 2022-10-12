@@ -19,7 +19,7 @@ public class ClientChatGui extends JFrame {
     private String userName = "";
 
     void start() throws IOException {
-        client = new Client("localhost",4200,this);
+        client = new Client("localhost",1099,this);
         client.start();
     }
 
@@ -72,6 +72,11 @@ public class ClientChatGui extends JFrame {
 
     private void connectUser(String username){
         client.registerUser(userName);
+        getMessages();
+    }
+
+    private void getMessages(){
+        client.receive();
     }
 
     private void sendMessage(String text){

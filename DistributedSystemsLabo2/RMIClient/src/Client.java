@@ -9,6 +9,7 @@ public class Client {
 
     private String userName = "";
     private ClientChatGui gui;
+    private int index = 0;
     public Client(String hostName, int port, ClientChatGui gui){
         this.gui = gui;
         this.hostName = hostName;
@@ -17,10 +18,10 @@ public class Client {
         start();
     }
 
-    public void start(){
+    public synchronized void start(){
         try {
             Registry myRegistry = LocateRegistry.getRegistry(hostName, port);
-            serverClient = (IChatClient) myRegistry.lookup(hostName);
+            serverClient = (IChatClient) myRegistry.lookup("ChatService");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -30,18 +31,13 @@ public class Client {
         serverClient.sendMessage(userName,message);
     }
 
-    private boolean transfer = true;
-
-    public String receive() {
-        while (true) {
-            String message = null;
-            try {
-                message = serverClient.receiveMessage();
-            } catch (RemoteException e) {
-                throw new RuntimeException(e);
-            }
-            //Display in GUI
+    public void receive() {
+        try {
+            String message = serverClient.receiveMessage(index);
+            index++;
             gui.display(message);
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
         }
     }
 
