@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DistributedSystemsLabo2.iml" filepath="$PROJECT_DIR$/DistributedSystemsLabo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfacesRMI/InterfacesRMI.iml" filepath="$PROJECT_DIR$/InterfacesRMI/InterfacesRMI.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMIClient/RMIClient.iml" filepath="$PROJECT_DIR$/RMIClient/RMIClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMIServer/RMIServer.iml" filepath="$PROJECT_DIR$/RMIServer/RMIServer.iml" />
     </modules>
