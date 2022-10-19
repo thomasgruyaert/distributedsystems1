@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0827bc70-8d19-405f-9956-e8d0bac46b67" name="Changes" comment="" />
+    <list default="true" id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/ChatClient.proto" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,21 +31,89 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ProjectId" id="2GLtyyYPIPjIPPLSupjVAYKBv34" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GLsqz4X6J9sRarxOgY7QQWuCZE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/margo/Documents/GitHub/distributedsystems1/labgrpc-master",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.TutorialClient">
+    <configuration name="TutorialClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.msec.labgrpc.TutorialClient" />
+      <module name="labgrpc-master.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.msec.labgrpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TutorialServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.msec.labgrpc.ChatServer" />
+      <module name="labgrpc-master.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.msec.labgrpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TutorialClient" />
+        <item itemvalue="Application.TutorialServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0827bc70-8d19-405f-9956-e8d0bac46b67" name="Changes" comment="" />
-      <created>1666179951679</created>
+      <changelist id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="" />
+      <created>1666179393530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666179951679</updated>
+      <updated>1666179393530</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added tutorial labo3">
+      <created>1666179545537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666179545537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added build files">
+      <created>1666180327123</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666180327129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -42,5 +126,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added labo3" />
+    <MESSAGE value="Added build files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added build files" />
   </component>
 </project>
