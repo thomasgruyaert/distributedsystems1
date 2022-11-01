@@ -38,7 +38,7 @@ package tutorial;
 
 // De calculator service definitie
 service ChatService{
-  rpc receiveMessage(ReceiveIndex) returns (stream Message){}
+  rpc receiveMessage(Empty) returns (stream Message){}
 
   rpc sendMessage(Message) returns (Response){}
 
@@ -52,6 +52,7 @@ service ChatService{
 message Message {
     string sender = 1;
     string content = 2;
+    int32 index = 3;
 }
 
 message Response {

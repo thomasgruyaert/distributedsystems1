@@ -26,4 +26,9 @@ public interface MessageOrBuilder extends
    */
   com.google.protobuf.ByteString
       getContentBytes();
+
+  /**
+   * <code>int32 index = 3;</code>
+   */
+  int getIndex();
 }

@@ -8,11 +8,11 @@ buildscript {
 }
 
 plugins {
-  id "com.google.protobuf" version "0.8.5"
-  id "java"
-  id "application"
-  id "idea"
-  id 'com.github.ben-manes.versions' version '0.19.0'
+    id "com.google.protobuf" version "0.8.5"
+    id "java"
+    id "application"
+    id "idea"
+    id 'com.github.ben-manes.versions' version '0.19.0'
 }
 
 group 'io.github.caio.grpc'
@@ -71,14 +71,14 @@ task runClient(type: JavaExec) {
 startScripts.enabled = false
 
 task chatServer(type: CreateStartScripts) {
-    mainClassName = "be.msec.grpclab.ChatServer"
+    mainClassName = "Main.be.msec.grpclab.ChatServer"
     applicationName = "chat-server"
     outputDir = new File(project.buildDir, 'tmp')
     classpath = jar.outputs.files + project.configurations.runtime
 }
 
 task chatClient(type: CreateStartScripts) {
-    mainClassName = "be.msec.grpclab.ChatClient"
+    mainClassName = "Main.be.msec.grpclab.ChatClient"
     applicationName = "chat-client"
     outputDir = new File(project.buildDir, 'tmp')
     classpath = jar.outputs.files + project.configurations.runtime

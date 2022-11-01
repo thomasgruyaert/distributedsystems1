@@ -18,6 +18,7 @@ private static final long serialVersionUID = 0L;
   private Message() {
     sender_ = "";
     content_ = "";
+    index_ = 0;
   }
 
   @java.lang.Override
@@ -54,6 +55,11 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             content_ = s;
+            break;
+          }
+          case 24: {
+
+            index_ = input.readInt32();
             break;
           }
           default: {
@@ -156,6 +162,15 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int INDEX_FIELD_NUMBER = 3;
+  private int index_;
+  /**
+   * <code>int32 index = 3;</code>
+   */
+  public int getIndex() {
+    return index_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -176,6 +191,9 @@ private static final long serialVersionUID = 0L;
     if (!getContentBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, content_);
     }
+    if (index_ != 0) {
+      output.writeInt32(3, index_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -190,6 +208,10 @@ private static final long serialVersionUID = 0L;
     }
     if (!getContentBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, content_);
+    }
+    if (index_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, index_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -211,6 +233,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getSender());
     result = result && getContent()
         .equals(other.getContent());
+    result = result && (getIndex()
+        == other.getIndex());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -226,6 +250,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getSender().hashCode();
     hash = (37 * hash) + CONTENT_FIELD_NUMBER;
     hash = (53 * hash) + getContent().hashCode();
+    hash = (37 * hash) + INDEX_FIELD_NUMBER;
+    hash = (53 * hash) + getIndex();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -363,6 +389,8 @@ private static final long serialVersionUID = 0L;
 
       content_ = "";
 
+      index_ = 0;
+
       return this;
     }
 
@@ -391,6 +419,7 @@ private static final long serialVersionUID = 0L;
       be.msec.labgrpc.Message result = new be.msec.labgrpc.Message(this);
       result.sender_ = sender_;
       result.content_ = content_;
+      result.index_ = index_;
       onBuilt();
       return result;
     }
@@ -446,6 +475,9 @@ private static final long serialVersionUID = 0L;
       if (!other.getContent().isEmpty()) {
         content_ = other.content_;
         onChanged();
+      }
+      if (other.getIndex() != 0) {
+        setIndex(other.getIndex());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -610,6 +642,32 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       content_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int index_ ;
+    /**
+     * <code>int32 index = 3;</code>
+     */
+    public int getIndex() {
+      return index_;
+    }
+    /**
+     * <code>int32 index = 3;</code>
+     */
+    public Builder setIndex(int value) {
+      
+      index_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 index = 3;</code>
+     */
+    public Builder clearIndex() {
+      
+      index_ = 0;
       onChanged();
       return this;
     }
