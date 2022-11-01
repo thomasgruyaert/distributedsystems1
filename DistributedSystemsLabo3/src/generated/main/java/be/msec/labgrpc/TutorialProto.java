@@ -52,16 +52,16 @@ public final class TutorialProto {
       "\016\n\006sender\030\001 \001(\t\022\017\n\007content\030\002 \001(\t\"+\n\010Resp" +
       "onse\022\016\n\006status\030\001 \001(\t\022\017\n\007message\030\002 \001(\t\"\035\n" +
       "\014ReceiveIndex\022\r\n\005index\030\001 \001(\005\"\030\n\004User\022\020\n\010" +
-      "username\030\001 \001(\t\"\007\n\005Empty2\246\002\n\nChatClient\022?" +
-      "\n\016receiveMessage\022\026.tutorial.ReceiveIndex" +
-      "\032\021.tutorial.Message\"\0000\001\0226\n\013sendMessage\022\021" +
-      ".tutorial.Message\032\022.tutorial.Response\"\000\022" +
-      "3\n\013connectUser\022\016.tutorial.User\032\022.tutoria" +
-      "l.Response\"\000\0226\n\016disconnectUser\022\016.tutoria" +
-      "l.User\032\022.tutorial.Response\"\000\0222\n\013getUserL" +
-      "ist\022\017.tutorial.Empty\032\016.tutorial.User\"\0000\001" +
-      "B(\n\017be.msec.labgrpcB\rTutorialProtoP\001\242\002\003H" +
-      "LWb\006proto3"
+      "username\030\001 \001(\t\"\007\n\005Empty2\247\002\n\013ChatService\022" +
+      "?\n\016receiveMessage\022\026.tutorial.ReceiveInde" +
+      "x\032\021.tutorial.Message\"\0000\001\0226\n\013sendMessage\022" +
+      "\021.tutorial.Message\032\022.tutorial.Response\"\000" +
+      "\0223\n\013connectUser\022\016.tutorial.User\032\022.tutori" +
+      "al.Response\"\000\0226\n\016disconnectUser\022\016.tutori" +
+      "al.User\032\022.tutorial.Response\"\000\0222\n\013getUser" +
+      "List\022\017.tutorial.Empty\032\016.tutorial.User\"\0000" +
+      "\001B(\n\017be.msec.labgrpcB\rTutorialProtoP\001\242\002\003" +
+      "HLWb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

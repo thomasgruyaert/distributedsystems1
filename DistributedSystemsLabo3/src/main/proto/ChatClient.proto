@@ -37,7 +37,7 @@ option objc_class_prefix = "HLW";
 package tutorial;
 
 // De calculator service definitie
-service ChatClient{
+service ChatService{
   rpc receiveMessage(ReceiveIndex) returns (stream Message){}
 
   rpc sendMessage(Message) returns (Response){}
