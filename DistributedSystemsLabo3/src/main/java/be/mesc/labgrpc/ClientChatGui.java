@@ -1,3 +1,5 @@
+package be.mesc.labgrpc;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,12 +17,17 @@ public class ClientChatGui extends JFrame {
     private JButton connectButton;
     private JButton disconnectButton;
     private JTextArea onlineUsersArea;
-    private Client client;
+    private ChatClient client;
     private String userName = "";
 
     void start() throws IOException {
-        client = new Client("localhost",1099,this);
-        client.start();
+        client = new ChatClient("localhost", 50050);
+        new Thread(() -> {
+            while(client.isConnected()){
+                onlineUsersArea.setText(client.getUsers());
+                chatArea.setText(client.GetHistory());
+            }
+        }).start();
     }
 
     public ClientChatGui(String title) {
@@ -78,37 +85,29 @@ public class ClientChatGui extends JFrame {
     }
 
     private void connectUser(String username){
-        client.registerUser(userName);
-        updateOnlineUsers();
-        getMessages();
+        client.Connect(userName);
     }
 
     private void disconnectUser(){
-        client.logoutUser();
+        client.Disconnect(userName);
         onlineUsersArea.setText("");
     }
 
     private void getMessages(){
         new Thread(() -> {
-            client.receive();
+            chatArea.setText(client.GetHistory());
         }).start();
     }
 
     private void updateOnlineUsers(){
         new Thread(() -> {
-           setOnlineUsers(client.getUserList());
+           onlineUsersArea.setText(client.getUsers());
         }).start();
     }
 
     private void sendMessage(String text){
-        //display("["+userName+"]: "+text);
         messageField.setText("");
-
-        try {
-            client.sendMessage(text);
-        } catch (RemoteException e) {
-            throw new RuntimeException(e);
-        }
+        client.sendMessage(text, userName);
     }
 
     public void setOnlineUsers(Set<String> onlineUsers){
@@ -121,7 +120,6 @@ public class ClientChatGui extends JFrame {
     public void display(String message){
         chatArea.append(message + "\n");
     }
-
 
     public static void main(String[] args){
         JFrame frame = new ClientChatGui("Chat GUI");

@@ -1,6 +1,8 @@
 package be.mesc.labgrpc;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -20,7 +22,13 @@ public class ChatClient {
     private final ChatServiceBlockingStub blockingStub;
     private final ChatServiceStub asyncStub;
 
+    private static String messageLog = "";
+
     private boolean connected = false;
+
+    public boolean isConnected(){
+        return connected;
+    }
 
     public ChatClient(String host, int port){
         this(ManagedChannelBuilder.forAddress(host, port).usePlaintext(true));
@@ -62,7 +70,7 @@ public class ChatClient {
         }
         return responseLog.toString();
     }
-    public String GetHistory() throws InterruptedException {
+    public String GetHistory() {
         Iterator<Message> messages;
         try{
             messages = blockingStub.receiveMessage(Empty.newBuilder().build());
@@ -101,6 +109,8 @@ public class ChatClient {
             System.out.println(userList);
 
             while(client.connected){
+                messageLog = client.GetHistory();
+                System.out.println(messageLog);
                 String message = sc.nextLine();
                 if(client.connected) client.sendMessage(message, username);
             }
