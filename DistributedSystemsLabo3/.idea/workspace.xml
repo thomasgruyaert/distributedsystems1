@@ -22,12 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="Connect fixed">
-      <change beforePath="$PROJECT_DIR$/../DistributedSystemsLabo2/RMIClient/src/ClientChatGui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ClientChatGui.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DistributedSystemsLabo2/RMIClient/src/ClientChatGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ClientChatGui.java" afterDir="false" />
+    <list default="true" id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="Added form">
+      <change afterPath="$PROJECT_DIR$/../DistributedSystemsLabo2/RMIClient/src/ClientChatGui.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DistributedSystemsLabo2/RMIClient/src/ClientChatGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/thoma/Documents/GitHub/distributedsystems1/DistributedSystemsLabo3"
+    "last_opened_file_path": "C:/Users/thoma/Documents/GitHub/distributedsystems1/DistributedSystemsLabo2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -221,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667313451842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added form">
+      <created>1667315916741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667315916741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +246,18 @@
     <MESSAGE value="Added build files" />
     <MESSAGE value="orgenised files" />
     <MESSAGE value="Connect fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connect fixed" />
+    <MESSAGE value="Added form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ClientChatGui.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
