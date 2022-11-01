@@ -22,7 +22,49 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="orgenised files" />
+    <list default="true" id="1b8e5ee9-b0ab-4f4e-a3c8-ade54fc4d61f" name="Changes" comment="orgenised files">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/grpc/be/msec/labgrpc/ChatServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/grpc/be/msec/labgrpc/ChatServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Empty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Empty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/EmptyOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/EmptyOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/MessageOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/MessageOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ReceiveIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ReceiveIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ReceiveIndexOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ReceiveIndexOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ResponseOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/ResponseOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/TutorialProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/TutorialProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/UserOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/main/java/be/msec/labgrpc/UserOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ChatSystemClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ChatSystemProtocol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ChatSystemServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ChatSystemServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientChatGui$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientChatGui$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientChatGui$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientChatGui$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientChatGui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientReadThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/ClientWriteThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/DistributedSystemsLabo1/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,10 +109,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/thoma/Documents/GitHub/distributedsystems1/DistributedSystemsLabo3"
+  }
+}]]></component>
   <component name="RunManager" selected="Application.ChatClient">
     <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.mesc.labgrpc.ChatClient" />
@@ -114,7 +157,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="distributedsystems1 [chatServer]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -133,7 +178,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="distributedsystems1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -150,52 +197,18 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,7 +266,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -262,26 +274,15 @@
     <MESSAGE value="orgenised files" />
     <option name="LAST_COMMIT_MESSAGE" value="orgenised files" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1667311162735">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1667311162735" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1667311162735">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1667311162735" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1667311162735">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1667311162735" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1667311162735">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1667311162735" />
-    <state x="872" y="419" key="Vcs.Push.Dialog.v2" timestamp="1667311122118">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="419" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1667311122118" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/be/mesc/labgrpc/ChatClient.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

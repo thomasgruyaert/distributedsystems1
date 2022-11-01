@@ -69,6 +69,7 @@ public class ChatServer {
 
         @Override
         public void receiveMessage(Empty nul, StreamObserver<Message> responseObserver){
+            System.out.println("Test receive");
             for(int i = 0; i < history.size(); i++){
                 responseObserver.onNext(history.get(i));
             }

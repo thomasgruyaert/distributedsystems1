@@ -26,10 +26,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DistributedSystemsLabo3" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/thoma/Documents/GitHub/distributedsystems1/DistributedSystemsLabo3"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thoma\Documents\GitHub\distributedsystems1\DistributedSystemsLabo2\JavaRMI\.idea" />
@@ -111,16 +112,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed Repo Structure" />
     <option name="LAST_COMMIT_MESSAGE" value="Changed Repo Structure" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="3620" y="454" key="FileChooserDialogImpl" timestamp="1667310981293">
-      <screen x="2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="3620" y="454" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1667310981293" />
   </component>
 </project>
